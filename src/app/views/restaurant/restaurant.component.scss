@@ -1,0 +1,369 @@
+$mainColor: #ffac41;
+$secondFont: "Festive", cursive;
+$mainFont: "Poppins", sans-serif;
+.plusHead {
+  height: 60px;
+}
+
+.restaurantHeader {
+  background: url("../../../assets/Backrounds/restaurantBG.jpeg") fixed center
+    center;
+  background-size: cover;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-family: $mainFont;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  P{
+    color: #fff;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  .headerOverlay {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Features */
+.features {
+  padding: 80px 0;
+
+  .featuresBox {
+    text-align: center;
+    transition: 0.1s;
+    padding: 55px 18px;
+    border-radius: 14px;
+
+    span {
+      display: block;
+      font-size: 20px;
+      color: #787878;
+      margin: 25px 0 0 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Dishes */
+.restaurantDishes {
+  background: url("../../../assets/restaurant/DishesBG.jpg") center center fixed;
+  background-size: cover;
+
+  .restaurantDishesOverlay {
+    padding: 50px 0;
+    background: rgb(130 130 130 / 60%);
+  }
+
+  .restaurantDishesDetails {
+    padding: 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+
+    span.Rooms {
+      color: #878787;
+      font-size: 15px;
+    }
+
+    mat-divider.firstDivider {
+      width: 7%;
+      margin: 10px auto 10px auto;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-family: $mainFont;
+    }
+
+    mat-list {
+      mat-list-item {
+        margin-bottom: 50px;
+        span,
+        strong {
+          display: flex;
+        }
+
+        span {
+          display: block;
+          text-align: right;
+          font-weight: bold;
+          color: $mainColor;
+        }
+
+        i {
+          color: #cacaca;
+        }
+
+        p {
+          font-size: 12px;
+          color: #787878;
+          text-align: left;
+        }
+
+        .personBox {
+          border: 1px solid #a3a3a3;
+          border-radius: 3px;
+          width: 49%;
+          padding: 1px;
+          margin-left: 69px;
+
+          span {
+            color: #bfbfbf;
+            font-size: 13px;
+            display: block;
+            text-align: center;
+          }
+        }
+
+        .upRow {
+          position: absolute;
+          top: 21px;
+          left: 7px;
+        }
+      }
+    }
+  }
+  button {
+    width: 100%;
+    height: 84px;
+    font-size: 18px;
+    background: #ffac41;
+  }
+}
+
+/* Working Hours */
+.workingHours {
+  border-top: 4px dotted #ccc;
+  border-bottom: 4px dotted #ccc;
+  padding: 40px 0;
+  margin: 40px 0;
+
+  .col-md-9,
+  .col-md-3 {
+    padding: 0;
+  }
+  .detailsSection {
+    background: url("../../../assets/restaurant/hoursBG.jpg") center center;
+    background-size: cover;
+  }
+
+  .detailsOverlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px;
+  }
+  .timesSpan::before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: $mainColor;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+
+  .timesSpan {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 80px;
+    color: #fff;
+    margin-top: 43px;
+    font-family: $mainFont;
+    font-weight: bold;
+  }
+
+  p {
+    color: #d0d0d0;
+    font-size: 17px;
+    margin: 60px 0 0 13px;
+  }
+
+  button {
+    margin: 40px 0 24px 12px;
+    width: 30%;
+    background-color: $mainColor;
+  }
+
+  .hourseDetails {
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    height: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  strong {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #787878;
+  }
+
+  span {
+    color: #a5a5a5;
+    font-size: 42px;
+    display: block;
+    margin-bottom: 40px;
+
+    b {
+      color: $mainColor;
+    }
+  }
+}
+
+/* Media Query */
+
+/* Extra Small */
+@media (min-width: 0) and (max-width: 576px) {
+  .restaurantHeader {
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    .headerOverlay {
+      padding: 50px 0;
+    }
+  }
+
+  /* Features */
+  .features {
+    .featuresBox {
+      margin-bottom: 70px;
+    }
+  }
+
+  /* Dishes */
+  .restaurantDishes {
+    .restaurantDishesDetails {
+      h3 {
+        margin-bottom: 100px;
+      }
+      mat-list {
+        mat-list-item {
+          margin-bottom: 200px;
+          .dishImg {
+            text-align: center;
+
+            img {
+              margin: 10px auto;
+            }
+          }
+
+          strong {
+            text-align: center;
+            display: block;
+          }
+
+          span {
+            display: block;
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+
+          .upRow {
+            position: relative;
+            text-align: center;
+          }
+        }
+      }
+    }
+    button {
+      width: 100%;
+      height: 84px;
+      font-size: 18px;
+      background: #ffac41;
+    }
+  }
+
+  /* Working Hours */
+  .workingHours {
+    h4 {
+      font-size: 2rem;
+    }
+
+    p {
+      margin: 20px 0 0 13px;
+    }
+
+    button {
+      width: 70%;
+      background-color: $mainColor;
+    }
+
+    .hourseDetails {
+      text-align: center;
+      border: 1px solid #f1f1f1;
+      height: 402px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 50px;
+      color: #787878;
+    }
+
+    span {
+      color: #a5a5a5;
+      font-size: 42px;
+      display: block;
+      margin-bottom: 40px;
+
+      b {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+/* Small Screen */
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Features */
+  .features {
+    .featuresBox {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Larg Screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Extra Larg Screen */
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+
+/* Extra Extra Larg Screen */
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,55 @@
+$mainColor: #ffac41;
+$secondFont: "Festive", cursive;
+$mainFont: "Poppins", sans-serif;
+.plusHead {
+  height: 60px;
+}
+
+.postHeader {
+  background: url("../../../assets/Backrounds/BlogBG.jpg") fixed center center;
+  background-size: cover;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: $mainFont;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .headerOverlay {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Posts List */
+.postsList {
+  padding: 50px 0;
+
+  .postDetails {
+    margin: 10px 0 20px 0;
+    span {
+      margin-right: 10px;
+      color: #999999;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    line-height: 1.9;
+    color: #787878;
+  }
+
+  mat-divider {
+    margin: 40px 0;
+  }
+}

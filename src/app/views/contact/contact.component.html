@@ -1,0 +1,104 @@
+<div class="plusHead"></div>
+
+<!-- Contact Map -->
+<div class="contactMap">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="mapDetails">
+        <h1>{{"Contact_Header_Touch" | translate}}</h1>
+        <p>{{"Contact_Header_Decription" | translate}}</p>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14378.249587848008!2d32.61274!3d25.718909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbf01993fedff2d6!2sMemnon%20Hotel%20Luxor!5e0!3m2!1sen!2sus!4v1626101424715!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Info -->
+<div class="contactInfo">
+  <div class="container">
+    <span class="headSpan">{{"Contact_Info_Span" | translate}}</span>
+    <mat-divider class="first"></mat-divider>
+    <h2>{{"Contact_Info_Heading" | translate}}</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../../../assets/Contact/icon-contact-email.png" />
+        <strong>info@tastyc.com <br>
+          reservation@tastyc.com</strong>
+      </div>
+      <div class="col-md-4">
+        <img src="../../../assets/Contact/icon-contact-tel.png" />
+        <strong>+201030340897</strong>
+      </div>
+      <div class="col-md-4">
+        <img src="../../../assets/Contact/icon-contact-adr.png" />
+        <strong>LUXOR.WEST BANK MEMNON ROAD OPPOSITE COLOSSI OF MEMNON </strong>
+      </div>
+      <mat-divider class="second"></mat-divider>
+    </div>
+  </div>
+</div>
+
+<!-- Form -->
+<div class="contactForm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="headFormSpan">{{"Contact_Form_Span" | translate}}</span>
+        <mat-divider class="third"></mat-divider>
+        <h2>{{"Contact_Form_Heading" | translate}}</h2>
+        <p>{{"Contact_Form_Description" | translate}}</p>
+      </div>
+      <div class="col-md-8">
+        <!-- Contact Form -->
+        <form action="https://formspree.io/moustafaahmed582@gmail.com" [formGroup]="contactForm" class="example-form"
+          method="POST">
+          <!-- User Name Field -->
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{"Contact_Form_Name_Label" | translate}}</mat-label>
+            <input type="text" formControlName="UserName" matInput
+              [placeholder]="'Contact_Form_Name_Placeholder' | translate" [(ngModel)]="UserName" required
+              name="_replyto">
+            <mat-error *ngIf="!UserName">
+              {{"Contact_Form_Name_Error" | translate}}
+            </mat-error>
+          </mat-form-field>
+          <!-- User Mail Field -->
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{"Contact_Form_Email_Address_Label" | translate}}</mat-label>
+            <input formControlName="UserMail" type="email" matInput
+              [placeholder]="'Contact_Form_Email_Address_Placeholder' | translate" [(ngModel)]="UserMail" required>
+            <mat-error *ngIf="!UserMail">
+              {{"Contact_Form_Email_Address_Error" | translate}}
+            </mat-error>
+          </mat-form-field>
+          <!-- User Phone Field -->
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{"Contact_Form_MNumber_Label" | translate}}</mat-label>
+            <input formControlName="UserPhone" type="tel" matInput
+              [placeholder]="'Contact_Form_MNumber_Placeholder' | translate" [(ngModel)]="UserPhone" required>
+            <mat-error *ngIf="!UserPhone">
+              {{"Contact_Form_MNumber_Error" | translate}}
+            </mat-error>
+            <!-- User Message Field -->
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{"Contact_Form_Message_Label" | translate}}</mat-label>
+            <textarea formControlName="UserMessage" matInput
+              [placeholder]="'Contact_Form_Message_Placeholder' | translate" [(ngModel)]="UserMessage" required
+              name="message"></textarea>
+            <mat-error *ngIf="!UserMessage">
+              {{"Contact_Form_Message_Error" | translate}}
+            </mat-error>
+          </mat-form-field>
+          <button type="submit" mat-raised-button [disabled]="!contactForm.valid"
+            (click)="formSubmit()">{{"Contact_Form_Button" |
+            translate}}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+$mainColor: #ffac41;
+$mainFont: "Poppins", sans-serif;
+
+.notFound {
+  padding: 100px 0;
+  text-align: center;
+
+  i {
+    color: $mainColor;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-family: $mainFont;
+    font-size: 3rem;
+  }
+
+  p {
+    color: #787878;
+    margin-top: 20px;
+  }
+}

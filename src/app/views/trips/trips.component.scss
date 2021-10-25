@@ -1,0 +1,190 @@
+$mainColor: #ffac41;
+$secondFont: "Festive", cursive;
+$mainFont: "Poppins", sans-serif;
+.plusHead {
+  height: 60px;
+}
+
+/* Trip Header */
+.tripsHeader {
+  background: url("../../../assets/Backrounds/tripsBG.jpg") fixed center center;
+  background-size: cover;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-family: $mainFont;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .headerOverlay {
+    padding: 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .headTripBox {
+    margin: 100px 0;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #fff;
+
+    i {
+      font-size: 50px;
+    }
+
+    span.boxSpan {
+      display: block;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  .lastBox {
+    border-right: none;
+  }
+
+  .trip-button button {
+    background-color: $mainColor;
+  }
+}
+
+/* Latest Trips */
+.latestTrips {
+  padding: 50px 0;
+  text-align: center;
+
+  span.archiveSpan {
+    color: #787878;
+  }
+
+  mat-divider {
+    width: 4%;
+    margin: 10px auto 20px auto;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-family: $mainFont;
+  }
+
+  p.headParagraph {
+    color: #787878;
+    margin: 50px 0;
+  }
+
+  .latestBox {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .latestOverlay {
+    text-align: left;
+    padding: 230px 0px 40px 20px;
+    background: linear-gradient(to top, #045e82, transparent);
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+    transition: 0.3s;
+  }
+
+  .latestImage:hover ~ .latestOverlay {
+    bottom: 0px;
+  }
+
+  .latestOverlay:hover {
+    bottom: 0px;
+  }
+  .locationSpan {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 7px;
+  }
+
+  strong.latestStrong {
+    font-size: 35px;
+    display: block;
+    margin: 30px 0;
+  }
+
+  .stars {
+    margin-left: 10px;
+    i {
+      margin-right: 5px;
+      color: $mainColor;
+    }
+  }
+
+  p.overParagraph {
+    width: 60%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.4;
+    padding-bottom: 50px;
+  }
+
+  strong.price {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 17px;
+  }
+
+  .col-md-6 {
+    margin-bottom: 30px;
+  }
+
+  .smallOverlay {
+    padding: 130px 0px 20px 20px;
+
+    strong.latestStrong {
+      font-size: 25px;
+      display: block;
+      margin: 15px 0;
+    }
+
+    .stars {
+      margin-left: 10px;
+      i {
+        margin-right: 5px;
+        color: $mainColor;
+      }
+    }
+
+    p.overParagraph {
+      width: 70%;
+      color: #fff;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    strong.price {
+      position: absolute;
+      right: 15px;
+      bottom: 20px;
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 576px) {
+  /* Trip Header */
+  .tripsHeader {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .latestTrips h2 {
+    font-size: 1.9rem;
+  }
+
+  .latestBox {
+    margin-bottom: 50px;
+  }
+}

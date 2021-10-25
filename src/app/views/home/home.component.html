@@ -1,0 +1,313 @@
+<div class="header">
+  <div class="headerOver">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-7">
+          <h1>Memnon</h1>
+          <span>{{"Home_Header_Hotel" | translate}}</span>
+          <strong>{{'Home_Slogan' | translate}}</strong>
+          <a mat-stroked-button routerLink='contact'><i class="fas fa-link"></i> {{"Home_Header_Button" |
+            translate}}</a>
+        </div>
+        <div class="col-sm-12 col-lg-5 moving">
+          <img src="../../../assets/Icons/hotelLocation.png" title="Hotel" alt="Hotel Location" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<!-- Services -->
+<div class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="serBox">
+          <div class="row">
+            <div class="col-md-3">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="col-md-8">
+              <span class="serBoxTitle">{{"Home_Services_Restaurant_Title" | translate}}</span>
+              <mat-divider></mat-divider>
+              <p class="serBoxContent">
+                {{"Home_Services_Restaurant" | translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="serBox">
+          <div class="row">
+            <div class="col-md-3">
+              <i class="fas fa-cocktail"></i>
+            </div>
+            <div class="col-md-8">
+              <span class="serBoxTitle">{{"Home_Services_Cafe_Title"| translate}}</span>
+              <mat-divider></mat-divider>
+              <p class="serBoxContent">
+                {{"Home_Services_Cafe"| translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="serBox">
+          <div class="row">
+            <div class="col-md-3">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <div class="col-md-8">
+              <span class="serBoxTitle">{{"Home_Services_Boutique_Title" | translate}}</span>
+              <mat-divider></mat-divider>
+              <p class="serBoxContent">
+                {{"Home_Services_Boutique" | translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<mat-divider></mat-divider>
+<!-- Rooms -->
+<div class="rooms">
+  <span class="roomsSpan text-center">{{"Home_Rooms_Luxury" | translate}} </span>
+  <mat-divider></mat-divider>
+  <h2 class=" roomsHeading text-center">{{"Home_Rooms_Best" | translate}}</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bigRoomBox">
+          <div class="boxImage">
+            <img src="../../../assets/Rooms/BigRoom.JPG" class="img-responsive" />
+            <div class="imgDetails">
+              <span class="imgDetailsSpan">{{"Home_Big_Room_Name" | translate}}</span>
+            </div>
+          </div>
+          <div class="boxDetails">
+            <h2>{{"Home_Big_Room_Title" | translate}}</h2>
+            <div class="smallRoomDetails">
+              <span><i class="far fa-user-circle"></i> {{"Home_Big_Room_Guest_Number" | translate}}</span>
+              <span>{{"Home_Big_Room_Guest_Price" | translate}} <i
+                  class="fas fa-dollar-sign"></i><strong></strong></span>
+              <p>
+                {{"Home_Big_Room_Guest_Description" | translate}}
+              </p>
+            </div>
+            <button mat-raised-button color="warn" routerLink="contact"><i class="far fa-plus-square"></i>
+              {{"Home_Big_Room_Button" | translate}}</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="restOfRooms">
+          <div class="row">
+            <div class="col-md-6">
+              <a routerLink="rooms">
+                <div class="boxImage">
+                  <img src="../../../assets/Rooms/room1.JPG" class="img-responsive" />
+                  <div class="imgDetails">
+                    <span class="imgDetailsSpan">{{"Home_Small_Room_Name_One" | translate}}</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a routerLink="rooms">
+                <div class="boxImage">
+                  <img src="../../../assets/Rooms/room2.jpg" class="img-responsive" />
+                  <div class="imgDetails">
+                    <span class="imgDetailsSpan">{{"Home_Small_Room_Name_Two" | translate}}</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6">
+              <a routerLink="rooms">
+                <div class="boxImage">
+                  <img src="../../../assets/Rooms/room4.jpg" class="img-responsive" />
+                  <div class="imgDetails">
+                    <span class="imgDetailsSpan">{{"Home_Small_Room_Name_Three" | translate}}</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6">
+              <a routerLink="rooms">
+                <div class="boxImage">
+                  <img src="../../../assets/Rooms/room3.jpg" class="img-responsive" />
+                  <div class="imgDetails">
+                    <span class="imgDetailsSpan">{{"Home_Small_Room_Name_Four" | translate}}</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cafe -->
+<div class="cafe">
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <div class="cafeImages">
+        <img src="../../../assets/Cafe/cafe.jpg" />
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+      <div class="cafeDetails">
+        <span class="cafeSpan">{{"Home_Cafe_Span" | translate}}</span>
+        <h3>{{"Home_Cafe_Heading" | translate}}</h3>
+        <p class="cafeContent">{{"Home_Cafe_Description" | translate}}</p>
+        <button routerLink="restaurant" mat-raised-button color="warn"><i class="fas fa-info-circle"></i>
+          {{"Home_Cafe_Button" | translate}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trips -->
+<div class="trips">
+  <div class="container">
+    <span class="headTripSpan">{{"Home_Trips_Span" | translate}}</span>
+    <mat-divider></mat-divider>
+    <h6 class="text-center">{{"Home_Trips_Heading" | translate}}</h6>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <div class="tripsDetails">
+          <strong><i class="fas fa-route"></i> {{"Home_Trips_Icon_span" | translate}}</strong>
+          <span class="detailsSpan">{{"Home_Trips_Bold_Description" | translate}}</span>
+          <p>{{"Home_Trips_Desc1" | translate}} <br><br>
+
+            {{"Home_Trips_Desc2" | translate}}</p>
+          <button routerLink="trips" mat-raised-button><i class="fas fa-info-circle"></i> {{"Home_Trips_Button" |
+            translate}}</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="mainImage">
+          <img class="img-fluid" src="../../../assets/Trips/Trips/4.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Memnon View -->
+<div class="memnonView">
+  <div class="viewOverlay">
+    <div class="container">
+      <div class="row">
+        <span>{{"Home_View_Span" | translate}}</span>
+        <mat-divider></mat-divider>
+        <h4>{{"Home_View_Heading" | translate}}</h4>
+
+      </div>
+      <button routerLink="rooms" mat-raised-button color="basic"><i class="far fa-images"></i> {{"Home_View_Button" |
+        translate}}</button>
+    </div>
+  </div>
+</div>
+
+<!-- Testemonials -->
+<div class="testemonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="testemonialsDetails">
+
+          <h6><i class="fas fa-fire-alt"></i> {{"Home_Reviews_Heading" | translate}}</h6>
+          <p>{{"Home_Reviews_Description" | translate}}</p>
+        </div>
+      </div>
+      <div class="col-lg-8 text-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testi">
+                <i class="fas fa-quote-right before qouts"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum iure, tempore culpa
+                  autveritatis fuga, libero eum, numquam nemo debitis reiciendis</p>
+                <i class="fas fa-quote-left after qouts"></i>
+                <strong>Moustafa Elkady</strong>
+                <span class="position">Founder of Mender</span>
+              </div>
+            </div>
+            <div class="carousel-item" *ngFor=" let testi of testemonials">
+              <div class="testi">
+                <i class="fas fa-quote-right before qouts"></i>
+                <p>{{testi.content}}</p>
+                <i class="fas fa-quote-left after qouts"></i>
+                <strong>{{testi.author}}</strong>
+                <span class="position">{{testi.position}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Send Review -->
+      <div class="col-lg-12">
+        <div class="reviewSending">
+          <strong><i class="fas fa-heart"></i> {{"Home_Reviews_Input_Heading" | translate}}</strong>
+          <form [formGroup]="reviewForm" class="example-form">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">{{"Home_Reviews_Input_Name" |
+                    translate}}</label>
+                  <input [(ngModel)]="ReveiewerName" formControlName="ReveiewerName" type="text" class="form-control"
+                    id="exampleFormControlInput1" [placeholder]="'Home_Reviews_Input_Name' | translate" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">{{"Home_Reviews_Input_Email" |
+                    translate}}</label>
+                  <input formControlName="ReveiewerMail" type="email" class="form-control" id="exampleFormControlInput1"
+                    [placeholder]="'Home_Reviews_Input_Email' | translate" required>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">{{"Home_Reviews_Input_Message" |
+                    translate}}</label>
+                  <textarea formControlName="ReveiewerMessage" class="form-control" id="exampleFormControlTextarea1"
+                    rows="3" [placeholder]="'Home_Reviews_Input_Message' | translate" required></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" mat-raised-button color="warn"
+                  [disabled]="reviewForm.invalid">{{"Home_Reviews_Input_Button" | translate}}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Villa -->
+<div class="villa">
+  <div class="villaOverlay">
+    <div class="container">
+      <div class="row">
+        <span>{{"Home_Villa_Span" | translate}}</span>
+        <h6>{{"Home_Villa_Heading" | translate}}</h6>
+        <button mat-button routerLink="/about">{{"Home_Villa_Button" | translate}}</button>
+      </div>
+    </div>
+  </div>
+</div>

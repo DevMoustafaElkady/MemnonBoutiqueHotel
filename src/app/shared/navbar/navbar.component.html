@@ -1,0 +1,82 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button (click)="sideMenu.toggle()" mat-icon-button class="example-icon"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div routerLink="/" class="upTitle"><img src="../../../assets/Logo/Logo4Site.png" alt="logo" class="img-fluid">
+    </div>
+    <div class="navbarList d-sm-none d-none d-lg-block">
+      <a mat-button routerLink="/" routerLinkActive="routerAvtive"
+        [routerLinkActiveOptions]="{exact: true}">{{"NavBar_Home" | translate}}</a>
+      <a mat-button routerLink="/about" routerLinkActive="routerAvtive">{{"NavBar_About" | translate}}</a>
+      <a mat-button routerLink="/rooms" routerLinkActive="routerAvtive">{{"NavBar_Rooms" | translate}}</a>
+      <a mat-button routerLink="/restaurant" routerLinkActive="routerAvtive">{{"NavBar_Restaurant" | translate}}</a>
+      <a mat-button routerLink="/trips" routerLinkActive="routerAvtive">{{"NavBar_Trips" | translate}}</a>
+      <a mat-button routerLink="/contact" routerLinkActive="routerAvtive">{{"NavBar_Contact" | translate}}</a>
+    </div>
+  </mat-toolbar-row>
+  <div class="changeLang">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <i class="fas fa-globe-asia"></i>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button (click)="changeCurrentLang('en')" mat-menu-item>
+        <img class="langItemDB" width="23px" src="../../../assets/Icons/english.png">
+        <span class="langItemDB"> EN</span>
+      </button>
+      <button (click)="changeCurrentLang('fr')" mat-menu-item>
+        <img class="langItemDB" width="23px" src="../../../assets/Icons/FR.png">
+        <span> FR</span>
+      </button>
+      <button (click)="changeCurrentLang('de')" mat-menu-item>
+        <img class="langItemDB" width="23px" src="../../../assets/Icons/De.png">
+        <span> DE</span>
+      </button>
+      <button (click)="changeCurrentLang('sp')" mat-menu-item>
+        <img class="langItemDB" width="23px" src="../../../assets/Icons/sp.png">
+        <span> SP</span>
+      </button>
+    </mat-menu>
+
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" #sideMenu>
+    <div class="plusHead"></div>
+    <img src="../../../assets/Logo/Logo4Site.png" title="logo" title="logo" />
+    <mat-list>
+      <mat-list-item>
+        <i class="fas fa-house-user"></i>
+        <button mat-button routerLink="" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact: true}">
+          {{"NavBar_Home" | translate}}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <i class="fas fa-info"></i>
+        <button mat-button routerLink="about" routerLinkActive="activeLink">{{"NavBar_About" | translate}}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <i class="fas fa-bed"></i>
+        <button mat-button routerLink="rooms" routerLinkActive="activeLink"> {{"NavBar_Rooms" | translate}}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <i class="fas fa-utensils"></i>
+        <button mat-button routerLink="restaurant" routerLinkActive="activeLink">
+          {{"NavBar_Restaurant" | translate}}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <i class="fas fa-route"></i>
+        <button mat-button routerLink="trips" routerLinkActive="activeLink">
+          {{"NavBar_Trips" | translate}}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <i class="fas fa-link"></i>
+        <button mat-button routerLink="contact" routerLinkActive="activeLink">{{"NavBar_Contact" | translate}}</button>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

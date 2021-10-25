@@ -1,0 +1,83 @@
+footer {
+  background-color: #ffac41;
+  padding: 50px 0;
+
+  h2.numHeading {
+    margin-bottom: -6px;
+  }
+
+  p.aboutParagraph {
+    width: 80%;
+    margin-left: 10px;
+    line-height: 1.5;
+  }
+
+  span {
+    margin: -4px -4px 21px -3px;
+    display: block;
+    margin-left: 3px;
+    font-weight: bold;
+    color: #505050;
+  }
+
+  p.num {
+    font-size: 28px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+
+mat-list-item {
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+mat-list-item:hover {
+  background-color: #cf9448;
+  color: #f1f1f1;
+}
+
+img {
+  margin-bottom: 25px;
+}
+
+/* Media Query */
+
+/* Extra Small */
+@media (min-width: 0) and (max-width: 576px) {
+  footer {
+    text-align: center;
+    padding: 50px 50px;
+
+    p.aboutParagraph {
+      width: 100%;
+      padding: 20px 20px;
+    }
+
+    mat-list-item {
+      cursor: pointer;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+/* Small Screen */
+@media (min-width: 576px) and (max-width: 768px) {
+}
+
+/* Medium Screen */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Larg Screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Extra Larg Screen */
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+
+/* Extra Extra Larg Screen */
+@media (min-width: 1400px) {
+}

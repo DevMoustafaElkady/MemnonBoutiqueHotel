@@ -1,0 +1,78 @@
+$mainColor: #ffac41;
+$secondFont: "Festive", cursive;
+$mainFont: "Poppins", sans-serif;
+.plusHead {
+  height: 90px;
+}
+
+mat-toolbar {
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+
+  .upTitle {
+    color: #ffac41;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+}
+
+.navbarList {
+  position: absolute;
+  right: 100px;
+  span {
+    padding-right: 1rem;
+  }
+}
+/* Change Languages */
+.changeLang {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  i {
+    font-size: 1.5rem;
+    animation: rotate 2.5s linear infinite;
+  }
+
+  .langItemDB {
+    margin-right: 20px;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.routerAvtive {
+  color: #ffac41;
+}
+
+/* Sidenav */
+mat-sidenav {
+  padding: 40px;
+  height: 100vh;
+
+  img {
+    margin-bottom: 20px;
+  }
+  button {
+    width: 100%;
+    padding: 0 40px 0 10px;
+    text-align: left;
+  }
+
+  i {
+    color: $mainColor;
+    font-size: 20px;
+    margin-right: 10px;
+    width: 35px;
+    text-align: center;
+  }
+
+  .activeLink {
+    color: $mainColor;
+  }
+}

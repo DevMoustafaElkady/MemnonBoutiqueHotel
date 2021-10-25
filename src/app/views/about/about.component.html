@@ -1,0 +1,201 @@
+<div class="plusHead"></div>
+<div class="aboutHeader">
+  <div class="headerOverlay">
+    <div class="container">
+      <div class="row">
+        <h1>{{"About_Header_Heading" | translate}}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Summary -->
+<div class="aboutSummary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <span class="summarySpan">
+          {{"About_Summary_Span" | translate}}
+        </span>
+        <mat-divider></mat-divider>
+        <h2 class="summaryHead">
+          <strong>{{"About_Heading_part1" | translate}}</strong> {{"About_Heading_part2" | translate}} <br>
+          {{"About_Heading_part3" | translate}} <br> {{"About_Heading_part4" | translate}}
+        </h2>
+        <span class="summarySpanBelow">
+          {{"About_Heading_Span2" | translate}}
+        </span>
+      </div>
+      <div class="col-lg-5 col-sm-12">
+        <p>{{"About_Heading_Description" | translate}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Images -->
+<div class="aboutImages">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div class="imageBoxDetails">
+          <img src="../../../assets/About/Hotel.jpg" alt="restaurant">
+          <div class="imageDetails">
+            <span>{{"About_Services_Boutique_Heading" | translate}}</span>
+            <p>{{"About_Services_Boutique_Sopan" | translate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="imageBoxDetails">
+          <img src="../../../assets/About/restaurant.jpeg" alt="restaurant">
+          <div class="imageDetails">
+            <span>{{"About_Services_Restaurant_Heading" | translate}}</span>
+            <p>{{"About_Services_Boutique_Span" | translate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="imageBoxDetails">
+          <img src="../../../assets/About/Cafe.jpg" alt="restaurant">
+          <div class="imageDetails">
+            <span>{{"About_Services_Cafe_Heading" | translate}}</span>
+            <p>{{"About_Services_Cafe_Span" | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Rooms -->
+<div class="aboutRooms">
+  <div class="aboutRoomsOverlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="aboutRoomsDetails">
+            <span class="Rooms">{{"About_Promotions_Span" | translate}}</span>
+            <mat-divider class="firstDivider"></mat-divider>
+            <h3>{{"About_Promotions_Heading" | translate}}</h3>
+            <mat-list>
+              <mat-list-item>
+                <div class="row">
+                  <div class="col-md-2"><strong>{{"About_Single_Room_Name" | translate}}</strong></div>
+                  <div class="col-md-8 d-none d-lg-block"><i>- - - - - - - - - - - - - - - </i></div>
+                  <div class="col-md-2 text-right"><span>$33</span></div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p>{{"About_Single_Room_Description" | translate}}</p>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="personBox">
+                        <span class="personBoSpan"><i class="far fa-user-circle"></i> 1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-list-item>
+              <mat-list-item>
+                <div class="row">
+                  <div class="col-md-2"><strong>{{"About_Double_Room_Name" | translate}}</strong></div>
+                  <div class="col-md-8 d-none d-lg-block"><i>- - - - - - - - - - - - - - - </i></div>
+                  <div class="col-md-2 text-right"><span>$55</span></div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p>{{"About_Double_Room_Description" | translate}}</p>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="personBox">
+                        <span class="personBoSpan"><i class="far fa-user-circle"></i> 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-list-item>
+              <mat-list-item>
+                <div class="row">
+                  <div class="col-md-2"><strong>{{"About_Triple_Room_Name" | translate}}</strong></div>
+                  <div class="col-md-8 d-none d-lg-block"><i>- - - - - - - - - - - - - - - </i></div>
+                  <div class="col-md-2 text-right"><span>$70</span></div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p>{{"About_Triple_Room_Description" | translate}}</p>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="personBox">
+                        <span class="personBoSpan"><i class="far fa-user-circle"></i> 3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-list-item>
+
+            </mat-list>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="../../../assets/About/aboutSliderImage.jpg" />
+          <button mat-raised-button color='warn' routerLink="/rooms"><i class="far fa-plus-square"></i>
+            {{"About_Promotion_Button" | translate}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+<!-- About Villa -->
+<div class="aboutVilla">
+  <div class="container">
+    <i class="fas fa-hotel"></i>
+    <h4>{{"About_Villa_Heading" | translate}}</h4>
+    <mat-divider></mat-divider>
+    <p>{{"About_Villa_Description" | translate}}</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="villaBoxImage">
+              <img src="../../../assets/About/villa1.jpg" class="img-fluid" alt="villa1" title="villa1" />
+              <div class="villaBoxImageDetails">
+                <strong>{{"About_Villa_Rooms" | translate}}</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="villaBoxImage">
+              <img src="../../../assets/About/villa2.jpg" class="img-fluid" alt="villa1" title="villa1" />
+              <div class="villaBoxImageDetails">
+                <strong>{{"About_Villa_Reception" | translate}}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="poolBox">
+          <img src="../../../assets/About/villa3.jpg" class="img-fluid" alt="villa1" title="villa1" />
+          <div class="villaBoxImageDetails">
+            <strong>{{"About_Villa_Swimming_Pool" | translate}}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Trips -->
+<div class="aboutTrips text-center">
+  <div class="aboutTripsOverlay">
+    <div class="container">
+      <div class="row">
+        <h5>{{"About_Trips_Heading" | translate}}</h5>
+        <p>{{"About_Trips_Description" | translate}}</p>
+        <div> <button mat-raised-button routerLink="/trips">{{"About_Trips_Button" | translate}} </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
