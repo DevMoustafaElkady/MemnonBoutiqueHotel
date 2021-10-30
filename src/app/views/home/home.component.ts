@@ -11,14 +11,39 @@ export class HomeComponent implements OnInit {
 
   testemonials = [
     {
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum iure, tempore culpa autveritatis fuga, libero eum, numquam nemo debitis reiciendis',
-    author: 'Moustafa Elkady',
-    position: 'Founder of Mender'
+    content: 'Fabulous food! Highly recommended. The location is perfect, right beside the iconic Colossi of Memnon and the beautiful Western Mountains.',
+    author: 'Kate Baker',
+    position: '5/5'
   },
   {
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum iure, tempore culpa autveritatis fuga, libero eum, numquam nemo debitis reiciendis',
-    author: 'Ahmed Khaled',
-    position: 'Founder of Corta'
+    content: 'Wow! Fantastic restaurant with amazing view. The food is divine! We had the shrimps and mixed salad.',
+    author: 'Donna Roie',
+    position: '5/5'
+  },
+  {
+    content: 'My favourite restaurant in Luxor! Best garlic shrimps in Luxor!',
+    author: 'Psychic Twin Feathers',
+    position: '5/5'
+  },
+  {
+    content: 'Very good again! Highly recommended!',
+    author: 'Miranda van Dijk',
+    position: '5/5'
+  },
+  {
+    content: 'A quiet, wonderful place with a magnificent view of the historical evidence of Luxor. The hot chocolate is highly recommended.',
+    author: 'Anette Luise',
+    position: '5/5'
+  },
+  {
+    content: 'nice little family hotel, vis a vis the former temple of Memnon. Good location, many sights on foot or by bike. Good price performance.',
+    author: 'Markus Hegnauer',
+    position: '5/5'
+  },
+  {
+    content: 'The food is very good and the staff is very friendly.',
+    author: 'Cau Brualla',
+    position: '5/5'
   }
 ];
 

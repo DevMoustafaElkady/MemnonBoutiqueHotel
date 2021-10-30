@@ -40,6 +40,13 @@ mat-toolbar {
   }
 }
 
+// Side par Menu
+mat-sidenav{
+  position: fixed;
+}
+
+
+// Keyframe
 @keyframes rotate {
   100% {
     transform: rotate(360deg);

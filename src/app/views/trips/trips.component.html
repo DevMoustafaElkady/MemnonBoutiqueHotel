@@ -44,132 +44,29 @@
   <div class="container">
     <span class="archiveSpan">Archive</span>
     <mat-divider></mat-divider>
-    <h2>Recent Tours</h2>
-    <p class="headParagraph">Travel has helped us to understand the meaning of life and it has helped us become <br>
-      better people. Each time
-      we
-      travel, we see the world with new eyes.</p>
+    <h2>Local Excursions, Visits and Activities</h2>
+    <p class="headParagraph">We offer a range of excursions in the local area which are tailor-made to your requirements
+      and interests. Many of the sites are accessible on foot but we can also arrange for a pick up from the hotel by
+      horse, camel, donkey or car. Alternatively you can hire one of our bicycles from the hotel.</p>
     <div class="row">
-      <div class="col-md-6">
+      <!-- Trip Box -->
+      <div class="col-md-4 trip-box" *ngFor="let trip of trips , let i = index">
         <div class="latestBox">
           <div class="latestImage">
-            <img class="img-fluid" src="../../../assets/Trips/Latest/1.jpeg" title="trip1" alt="tour2" />
-          </div>
-          <div class="latestOverlay">
-            <i class="far fa-compass"></i>
-            <span class="locationSpan">Cairo, Giza</span>
-            <strong class="latestStrong">Cairo Pyramids Trip</strong>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-
-            <p class="overParagraph">A wonderful little cottage right on the seashore - perfect for exploring with the
-              little boat which is
-              included in the price. Located opposite Nidri sleeping.</p>
-            <strong class="price">$1000</strong>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="latestBox">
-          <div class="latestImage">
-            <img class="img-fluid" src="../../../assets/Trips/Latest/2.jpeg" title="trip1" alt="tour2" />
-          </div>
-          <div class="latestOverlay">
-            <i class="far fa-compass"></i>
-            <span class="locationSpan">Cairo, Giza</span>
-            <strong class="latestStrong">Cairo Pyramids Trip</strong>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-
-            <p class="overParagraph">A wonderful little cottage right on the seashore - perfect for exploring with the
-              little boat which is
-              included in the price. Located opposite Nidri sleeping.</p>
-            <strong class="price">$1000</strong>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="latestBox">
-          <div class="latestImage">
-            <img class="img-fluid" src="../../../assets/Trips/Latest/3.jpeg" title="trip1" alt="tour2" />
+            <img class="img-fluid" [src]="trip.tripImgUrl" title="trip1" [alt]="i" />
           </div>
           <div class="latestOverlay smallOverlay">
             <i class="far fa-compass"></i>
-            <span class="locationSpan">Cairo, Giza</span>
-            <strong class="latestStrong">Cairo Pyramids Trip</strong>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-
-            <p class="overParagraph">A wonderful little cottage right on the seashore - perfect for exploring with the
-              little boat which is
-              included in the price. Located opposite Nidri sleeping.</p>
-            <strong class="price">$1000</strong>
+            <span class="locationSpan">{{trip.tripLocation}}</span>
+            <strong class="latestStrong">{{trip.tripName}}</strong>
+            <p class="overParagraph">{{trip.tripDescription}}</p>
+            <button routerLink="/contact" class="select-trip">Select Trip</button>
+            <strong class="price"><i *ngIf="trip.tripLocation == 'West bank of Luxor'" class="fas fa-walking"></i>
+              {{trip.tripTime}}</strong>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="latestBox">
-          <div class="latestImage">
-            <img class="img-fluid" src="../../../assets/Trips/Latest/4.jpeg" title="trip1" alt="tour2" />
-          </div>
-          <div class="latestOverlay smallOverlay">
-            <i class="far fa-compass"></i>
-            <span class="locationSpan">Cairo, Giza</span>
-            <strong class="latestStrong">Cairo Pyramids Trip</strong>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-
-            <p class="overParagraph">A wonderful little cottage right on the seashore - perfect for exploring with the
-              little boat which is
-              included in the price. Located opposite Nidri sleeping.</p>
-            <strong class="price">$1000</strong>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="latestBox">
-          <div class="latestImage">
-            <img class="img-fluid" src="../../../assets/Trips/Latest/5.jpeg" title="trip1" alt="tour2" />
-          </div>
-          <div class="latestOverlay smallOverlay">
-            <i class="far fa-compass"></i>
-            <span class="locationSpan">Cairo, Giza</span>
-            <strong class="latestStrong">Cairo Pyramids Trip</strong>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-
-            <p class="overParagraph">A wonderful little cottage right on the seashore - perfect for exploring with the
-              little boat which is
-              included in the price. Located opposite Nidri sleeping.</p>
-            <strong class="price">$1000</strong>
-          </div>
-        </div>
-      </div>
+      <!-- Trip Box End -->
     </div>
   </div>
 </div>

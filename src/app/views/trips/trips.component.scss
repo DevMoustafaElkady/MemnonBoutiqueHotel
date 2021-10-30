@@ -68,18 +68,21 @@ $mainFont: "Poppins", sans-serif;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: $mainFont;
   }
 
   p.headParagraph {
     color: #787878;
-    margin: 50px 0;
+    margin: 40px auto;
+    width: 60%;
+    line-height: 1.9;
   }
 
   .latestBox {
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
   }
 
   .latestOverlay {
@@ -91,6 +94,13 @@ $mainFont: "Poppins", sans-serif;
     position: absolute;
     bottom: -400px;
     transition: 0.3s;
+
+    .select-trip {
+      background: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 4px;
+    }
   }
 
   .latestImage:hover ~ .latestOverlay {
@@ -112,14 +122,6 @@ $mainFont: "Poppins", sans-serif;
     margin: 30px 0;
   }
 
-  .stars {
-    margin-left: 10px;
-    i {
-      margin-right: 5px;
-      color: $mainColor;
-    }
-  }
-
   p.overParagraph {
     width: 60%;
     color: #fff;
@@ -130,13 +132,9 @@ $mainFont: "Poppins", sans-serif;
 
   strong.price {
     position: absolute;
-    right: 15px;
+    right: 13px;
     bottom: 20px;
     font-size: 17px;
-  }
-
-  .col-md-6 {
-    margin-bottom: 30px;
   }
 
   .smallOverlay {
@@ -146,14 +144,6 @@ $mainFont: "Poppins", sans-serif;
       font-size: 25px;
       display: block;
       margin: 15px 0;
-    }
-
-    .stars {
-      margin-left: 10px;
-      i {
-        margin-right: 5px;
-        color: $mainColor;
-      }
     }
 
     p.overParagraph {

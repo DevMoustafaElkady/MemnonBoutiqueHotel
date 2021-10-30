@@ -43,36 +43,37 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" #sideMenu>
+  <mat-sidenav #sideMenu>
     <div class="plusHead"></div>
     <img src="../../../assets/Logo/Logo4Site.png" title="logo" title="logo" />
     <mat-list>
       <mat-list-item>
         <i class="fas fa-house-user"></i>
-        <button mat-button routerLink="" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact: true}">
+        <button (click)="sideMenu.toggle()" mat-button routerLink="" routerLinkActive="activeLink"
+          [routerLinkActiveOptions]="{exact: true}">
           {{"NavBar_Home" | translate}}</button>
       </mat-list-item>
       <mat-list-item>
         <i class="fas fa-info"></i>
-        <button mat-button routerLink="about" routerLinkActive="activeLink">{{"NavBar_About" | translate}}</button>
+        <button (click)="sideMenu.toggle()" mat-button routerLink="about" routerLinkActive="activeLink">{{"NavBar_About" | translate}}</button>
       </mat-list-item>
       <mat-list-item>
         <i class="fas fa-bed"></i>
-        <button mat-button routerLink="rooms" routerLinkActive="activeLink"> {{"NavBar_Rooms" | translate}}</button>
+        <button (click)="sideMenu.toggle()" mat-button routerLink="rooms" routerLinkActive="activeLink"> {{"NavBar_Rooms" | translate}}</button>
       </mat-list-item>
       <mat-list-item>
         <i class="fas fa-utensils"></i>
-        <button mat-button routerLink="restaurant" routerLinkActive="activeLink">
+        <button (click)="sideMenu.toggle()" mat-button routerLink="restaurant" routerLinkActive="activeLink">
           {{"NavBar_Restaurant" | translate}}</button>
       </mat-list-item>
       <mat-list-item>
         <i class="fas fa-route"></i>
-        <button mat-button routerLink="trips" routerLinkActive="activeLink">
+        <button (click)="sideMenu.toggle()" mat-button routerLink="trips" routerLinkActive="activeLink">
           {{"NavBar_Trips" | translate}}</button>
       </mat-list-item>
       <mat-list-item>
         <i class="fas fa-link"></i>
-        <button mat-button routerLink="contact" routerLinkActive="activeLink">{{"NavBar_Contact" | translate}}</button>
+        <button (click)="sideMenu.toggle()" mat-button routerLink="contact" routerLinkActive="activeLink">{{"NavBar_Contact" | translate}}</button>
       </mat-list-item>
     </mat-list>
   </mat-sidenav>

@@ -523,7 +523,6 @@ $secondFont: "Poppins", sans-serif;
 .testemonials {
   padding: 50px 0;
   position: relative;
-
   .testemonialsDetails {
     i {
       color: $mainColor;
@@ -533,19 +532,24 @@ $secondFont: "Poppins", sans-serif;
 
     h6 {
       font-size: 1.5rem;
-      margin: 20px 0 30px 0;
+      margin: 70px 0 30px 0;
+
     }
 
     p {
       color: #787878;
-      line-height: #787878;
+      line-height: 1.8;
       font-size: 1.1rem;
+      width: 70%;
+      margin-left: 40px;
+      text-align: center;
     }
   }
 
   .testi {
     padding: 30px 0;
     position: relative;
+    height: 50vh;
 
     .qouts {
       font-size: 60px;
